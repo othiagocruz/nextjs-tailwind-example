@@ -5,4 +5,9 @@
 html,
 body {
   font-family: Inter, sans-serif;
+  @apply bg-dark-gray;
+}
+
+.perspective {
+  transform: perspective(400px) rotateX(-2deg) scale(0.9, 0.9);
 }
