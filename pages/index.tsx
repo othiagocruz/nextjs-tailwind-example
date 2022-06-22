@@ -5,12 +5,16 @@ import logos from '../public/falling-logos.svg'
 import mouse from '../public/mouse-line.png'
 import metrics from '../public/metrics.svg'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Plane } from '@react-three/drei'
+import { Float, Html, OrbitControls, Sparkles } from '@react-three/drei'
 import Sphere from '../components/Sphere'
+import RetroComputer from "../public/retro-computer.png"
+import SquigglyArrow from "../public/squiggly-arrow.png"
+import Supabase from "../public/supabase.png"
+import Prismic from '../public/prismic.svg'
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className="relative">
       <Head>
         <title>jamstack 101</title>
         <meta name="description" content="Tailwind is awesome!" />
@@ -26,22 +30,29 @@ const Home: NextPage = () => {
       <article className="max-w-[1397px] m-auto bg-pattern bg-fixed rounded-[3rem] pt-28 relative perspective flex h-[893px] bg-[position:-567px_-579px] items-center flex-col mt-[-40rem]">
         <h2 className="font-black text-3xl sm:text-ultra text-white">javascript</h2>
         <p className="text-white font-light text-lg max-w-xl mt-12 text-center">Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.</p>
-        <Image src="retro-computer.png" className="absolute top-[28rem]" alt="blip bop" />
-        <Image src="squiggly-arrow.png" className="absolute right-24 bottom-36" alt="squiggly arrow" />
+        <span className="top-[28rem] absolute"><Image src={RetroComputer} width={810} height={808} alt="blip bop" /></span>
+        <span className="absolute right-24 bottom-36"><Image src={SquigglyArrow} alt="squiggly arrow" /></span>
       </article>
+
       <span className="block text-center -mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
 
-      <article className="max-w-[730px] text-center m-auto mb-40">
+      <article className="max-w-[914px] text-center m-auto mb-40">
         <h2 className="font-black mb-12 text-3xl sm:text-ultra text-white text-center">api</h2>
-        <p className="text-2xl text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
+        <p className="text-2xl max-w-[730px] m-auto text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
+        <Canvas camera={{ position: [0, 0, 52] }} style={{ width: "1024px", height: "1280px", position: "absolute", margin: "0 auto" }}>
+          <Float
+            position={[0, 1.1, 0]}
+            floatingRange={[0, 2.5]}
+            speed={5}
+          >
+            <Sparkles color="white" size={3000} opacity={1} />
+            <Sphere position={[0, 0, 0]} />
+            <Html transform distanceFactor={10} rotation={[0, 0.1, 0.25]} position={[-2, 11, 10]}><Image src={Prismic} width={800} height={300} alt="Prismic" /></Html>
+            <Html transform distanceFactor={10} rotation={[-0.2, 0, -0.25]} position={[3, -8, 10]}><Image src={Supabase} alt="Supabase" /></Html>
+          </Float>
+          <OrbitControls enableZoom={false} enablePan={false} />
+        </Canvas>
       </article>
-
-      <Canvas camera={{ position: [0, 0, 35] }}>
-        <ambientLight intensity={2} />
-        <pointLight position={[40, 40, 40]} />
-        <Sphere position={[0, -10, 0]} />
-        <OrbitControls />
-      </Canvas>
 
       <article className="pt-40 pb-[40rem] bg-[length:auto,_contain,_auto] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg')] bg-[position:100px_55%,_bottom_center,_bottom_center] bg-no-repeat bg-white ">
         <h2 className="font-black text-3xl sm:text-ultra">
