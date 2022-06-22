@@ -21,15 +21,15 @@ const Home: NextPage = () => {
           jamstack <span className="text-transparent bg-cover bg-no-repeat bg-clip-text bg-gradient-to-r from-[#ffbe86] to-[#cb799f]">101</span>
         </h1>
         <p className="font-light text-lg text-stone-500 max-w-[549px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
-        <Image src={mouse} priority />
+        <Image src={mouse} priority alt="mouse arrow" />
       </section>
       <article className="max-w-[1397px] m-auto bg-pattern bg-fixed rounded-[3rem] pt-28 relative perspective flex h-[893px] bg-[position:-567px_-579px] items-center flex-col mt-[-40rem]">
         <h2 className="font-black text-3xl sm:text-ultra text-white">javascript</h2>
         <p className="text-white font-light text-lg max-w-xl mt-12 text-center">Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.</p>
-        <img src="retro-computer.png" className="absolute top-[28rem]" title="blip bop" />
-        <img src="squiggly-arrow.png" className="absolute right-24 bottom-36" title="squiggly arrow" />
+        <Image src="retro-computer.png" className="absolute top-[28rem]" alt="blip bop" />
+        <Image src="squiggly-arrow.png" className="absolute right-24 bottom-36" alt="squiggly arrow" />
       </article>
-      <span className="block text-center -mt-48"><Image src={logos} priority /></span>
+      <span className="block text-center -mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
 
       <article className="max-w-[730px] text-center m-auto mb-40">
         <h2 className="font-black mb-12 text-3xl sm:text-ultra text-white text-center">api</h2>
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
       <article className="flex relative mix-blend-normal flex-col pb-56 m-auto -mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
         <h2 className="text-semi-ultra mt-32 font-black text-light-green text-center">top audit scores</h2>
-        <Image src={metrics} priority style={{ zIndex: '10' }} />
+        <Image src={metrics} priority style={{ zIndex: '10' }} alt="metrics" />
 
         <p className="text-2xl z-10 max-w-[700px] text-mid-gray mb-9">Search engines, business stakeholders, and end-users gauge a website’s value using metric tools like Google Lighthouse, which measures site performance, SEO, and accessibility.</p>
         <p className="text-2xl z-10 max-w-[700px] text-mid-gray mb-9">Performance is one of the most difficult scores to get to 100. This is especially true in a time when users demand JavaScript-heavy, highly-interactive web experiences.</p>
@@ -60,7 +60,8 @@ const Home: NextPage = () => {
         <span className="absolute z-0 rounded-[3rem] w-full h-full block bg-scores-gradient" />
       </article>
       <footer className="flex flex-col mt-40 mb-20 items-center text-white">
-        This is a design test by Thiago Cruz Santos for Monogram.
+        <p>This is a design test by Thiago Cruz Santos for Monogram.</p>
+        <p>Jam favicon created by <a href="https://www.flaticon.com/free-icons/jam" rel="noreferrer" title="jam icons" target="_blank">Smashicons</a></p>
         <span className="text-[#FF069C] mt-4 text-4xl">❤</span>
       </footer>
     </main>
