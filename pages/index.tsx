@@ -4,6 +4,9 @@ import Image from 'next/image'
 import logos from '../public/falling-logos.svg'
 import mouse from '../public/mouse-line.png'
 import metrics from '../public/metrics.svg'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Plane } from '@react-three/drei'
+import Sphere from '../components/Sphere'
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +35,13 @@ const Home: NextPage = () => {
         <h2 className="font-black mb-12 text-3xl sm:text-ultra text-white text-center">api</h2>
         <p className="text-2xl text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
       </article>
+
+      <Canvas camera={{ position: [0, 0, 35] }}>
+        <ambientLight intensity={2} />
+        <pointLight position={[40, 40, 40]} />
+        <Sphere position={[0, -10, 0]} />
+        <OrbitControls />
+      </Canvas>
 
       <article className="pt-40 pb-[40rem] bg-[length:auto,_contain,_auto] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg')] bg-[position:100px_55%,_bottom_center,_bottom_center] bg-no-repeat bg-white ">
         <h2 className="font-black text-3xl sm:text-ultra">
