@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react'
-import { GradientTexture, Html, Sphere as NativeSphere, SpotLight, useDepthBuffer, useTexture } from '@react-three/drei'
+import { useRef } from 'react'
+import { GradientTexture, Sphere as NativeSphere } from '@react-three/drei'
 import { Mesh } from 'three'
 
 export default function Box(props: typeof NativeSphere.arguments) {

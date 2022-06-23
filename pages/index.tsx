@@ -11,6 +11,8 @@ import RetroComputer from "../public/retro-computer.png"
 import SquigglyArrow from "../public/squiggly-arrow.png"
 import Supabase from "../public/supabase.png"
 import Prismic from '../public/prismic.svg'
+import HeroGraphic from '../public/hero-graphic.png'
+import BlockGraphic from '../public/block-graphic.jpg'
 
 const Home: NextPage = () => {
   return (
@@ -20,14 +22,19 @@ const Home: NextPage = () => {
         <meta name="description" content="Tailwind is awesome!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="pb-[40rem] bg-grid-lines bg-no-repeat bg-center bg-white ">
-        <h1 className="font-black text-3xl sm:text-ultra">
+      <section className="pb-[40rem] pl-28 pt-32 bg-grid-lines bg-no-repeat bg-center bg-white ">
+        <h1 className="font-black mb-8 text-3xl sm:text-ultra">
           jamstack <span className="text-transparent bg-cover bg-no-repeat bg-clip-text bg-gradient-to-r from-[#ffbe86] to-[#cb799f]">101</span>
         </h1>
-        <p className="font-light text-lg text-stone-500 max-w-[549px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
-        <Image src={mouse} priority alt="mouse arrow" />
+        <div className="flex relative">
+          <div>
+            <p className="font-light mb-16 ml-14 text-lg text-stone-500 max-w-[549px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
+            <span className="block ml-60"><Image src={mouse} priority alt="mouse arrow" /></span>
+          </div>
+          <span className="absolute -top-48 right-10"><Image src={HeroGraphic} priority alt="sliding cards" /></span>
+        </div>
       </section>
-      <article className="max-w-[1397px] m-auto bg-pattern bg-fixed rounded-[3rem] pt-28 relative perspective flex h-[893px] bg-[position:-567px_-579px] items-center flex-col mt-[-40rem]">
+      <article className="max-w-[1397px] m-auto bg-pattern bg-fixed rounded-[4.2rem] pt-28 relative perspective flex h-[893px] bg-[position:-567px_-579px] items-center flex-col mt-[-40rem]">
         <h2 className="font-black text-3xl sm:text-ultra text-white">javascript</h2>
         <p className="text-white font-light text-lg max-w-xl mt-12 text-center">Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.</p>
         <span className="top-[28rem] absolute"><Image src={RetroComputer} width={810} height={808} alt="blip bop" /></span>
@@ -54,14 +61,18 @@ const Home: NextPage = () => {
         </Canvas>
       </article>
 
-      <article className="pt-[50rem] pb-[40rem] bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:100px_55%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
-        <h2 className="font-black text-3xl sm:text-ultra">
+      <article className="pt-[55rem] pb-[55rem] pl-28 bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
+        <h2 className="font-black text-3xl sm:text-ultra mb-16">
           markup
         </h2>
-        <p className="text-2xl text-neutral-700 max-w-[480px]">When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.</p>
+        <div className="flex relative">
+          <p className="text-2xl text-neutral-700 max-w-[480px]">When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.</p>
+          <span className="absolute -top-48 right-10"><Image src={BlockGraphic} priority alt="sliding cards" /></span>
+        </div>
+
       </article>
 
-      <article className="flex relative mix-blend-normal flex-col pb-56 m-auto -mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
+      <article className="flex relative flex-col pb-56 m-auto -mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
         <h2 className="text-semi-ultra mt-32 font-black text-light-green text-center">top audit scores</h2>
         <Image src={metrics} priority style={{ zIndex: '10' }} alt="metrics" />
 
