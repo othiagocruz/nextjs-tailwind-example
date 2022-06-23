@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet" />
         </Head>
-        <body className="bg-grid-lines bg-dark-gray bg-no-repeat bg-center">
+        <body className="sm:bg-grid-lines bg-dark-gray bg-no-repeat bg-center">
           <Main />
           <NextScript />
         </body>
