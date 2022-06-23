@@ -4,15 +4,17 @@ import Image from 'next/image'
 import logos from '../public/falling-logos.svg'
 import mouse from '../public/mouse-line.png'
 import metrics from '../public/metrics.svg'
-import { Canvas } from '@react-three/fiber'
-import { Float, Html, OrbitControls, Sparkles } from '@react-three/drei'
-import Sphere from '../components/Sphere'
+
 import RetroComputer from "../public/retro-computer.png"
 import SquigglyArrow from "../public/squiggly-arrow.png"
-import Supabase from "../public/supabase.png"
-import Prismic from '../public/prismic.svg'
 import HeroGraphic from '../public/hero-graphic.png'
 import BlockGraphic from '../public/block-graphic.jpg'
+import dynamic from 'next/dynamic'
+
+const Stage = dynamic(() => import('../components/Stage'), {
+  loading: () => <span>Loading...</span>,
+  ssr: false
+})
 
 const Home: NextPage = () => {
   return (
@@ -47,19 +49,9 @@ const Home: NextPage = () => {
       <article className="max-w-[914px] text-center m-auto mb-96">
         <h2 className="font-black mb-12 text-3xl sm:text-ultra text-white text-center">api</h2>
         <p className="text-2xl max-w-[730px] m-auto text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
-        <Canvas camera={{ position: [0, 0, 52] }} style={{ width: "1024px", height: "1280px", position: "absolute", margin: "0 auto" }}>
-          <Float
-            position={[0, 1.1, 0]}
-            floatingRange={[0, 2.5]}
-            speed={5}
-          >
-            <Sparkles color="white" size={3000} opacity={0.4} />
-            <Sphere position={[0, 0, 0]} />
-            <Html transform distanceFactor={10} rotation={[0, 0.1, 0.25]} position={[-2, 11, 10]}><Image src={Prismic} width={800} height={300} alt="Prismic" /></Html>
-            <Html transform distanceFactor={10} rotation={[-0.2, 0, -0.25]} position={[3, -8, 10]}><Image src={Supabase} alt="Supabase" /></Html>
-          </Float>
-          <OrbitControls enableZoom={false} enablePan={false} />
-        </Canvas>
+
+        <Stage />
+
       </article>
 
       <article className="pt-[55rem] pb-[55rem] pl-28 bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
