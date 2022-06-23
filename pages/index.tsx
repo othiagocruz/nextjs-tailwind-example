@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 
       <span className="block text-center -mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
 
-      <article className="max-w-[914px] text-center m-auto mb-40">
+      <article className="max-w-[914px] text-center m-auto mb-96">
         <h2 className="font-black mb-12 text-3xl sm:text-ultra text-white text-center">api</h2>
         <p className="text-2xl max-w-[730px] m-auto text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
         <Canvas camera={{ position: [0, 0, 52] }} style={{ width: "1024px", height: "1280px", position: "absolute", margin: "0 auto" }}>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             floatingRange={[0, 2.5]}
             speed={5}
           >
-            <Sparkles color="white" size={3000} opacity={1} />
+            <Sparkles color="white" size={3000} opacity={0.4} />
             <Sphere position={[0, 0, 0]} />
             <Html transform distanceFactor={10} rotation={[0, 0.1, 0.25]} position={[-2, 11, 10]}><Image src={Prismic} width={800} height={300} alt="Prismic" /></Html>
             <Html transform distanceFactor={10} rotation={[-0.2, 0, -0.25]} position={[3, -8, 10]}><Image src={Supabase} alt="Supabase" /></Html>
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         </Canvas>
       </article>
 
-      <article className="pt-40 pb-[40rem] bg-[length:auto,_contain,_auto] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg')] bg-[position:100px_55%,_bottom_center,_bottom_center] bg-no-repeat bg-white ">
+      <article className="pt-[50rem] pb-[40rem] bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:100px_55%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
         <h2 className="font-black text-3xl sm:text-ultra">
           markup
         </h2>
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
       </article>
       <footer className="flex flex-col mt-40 mb-20 items-center text-white">
         <p>This is a design test by Thiago Cruz Santos for Monogram.</p>
-        <p>Jam favicon created by <a href="https://www.flaticon.com/free-icons/jam" rel="noreferrer" title="jam icons" target="_blank">Smashicons</a></p>
+        <p>Jam favicon created by <a className="underline" href="https://www.flaticon.com/free-icons/jam" rel="noreferrer" title="jam icons" target="_blank">Smashicons</a></p>
         <span className="text-[#FF069C] mt-4 text-4xl">❤</span>
       </footer>
     </main>
