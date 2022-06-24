@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="light">
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="Content-Language" content="en" />

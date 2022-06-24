@@ -15,6 +15,21 @@ module.exports = {
         '2xl': ['24px', '38.8px'],
         '3xl': ['26px', '42px']
       },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: 'translatey(0px)' },
+          "50%": { transform: 'translatey(-20px)' },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-1deg)' },
+          '50%': { transform: 'rotate(1deg)' },
+        }
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
+        floater: "float 3s ease-in-out infinite",
+        wiggle: "wiggle 1s ease-in-out infinite"
+      },
       screens: {
         'xs': '475px',
         ...defaultTheme.screens,

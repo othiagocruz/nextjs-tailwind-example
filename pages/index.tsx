@@ -31,7 +31,7 @@ const Home: NextPage = () => {
               jamstack <span className="text-transparent bg-cover bg-no-repeat bg-clip-text bg-gradient-to-r from-[#ffbe86] to-[#cb799f]">101</span>
             </h1>
             <p className="font-light mb-6 ml-4 mr-4 sm:mb-16 sm:ml-14 sm:text-lg text-stone-500 max-w-[549px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
-            <span className="block ml-32 sm:ml-60"><Image src={mouse} priority alt="mouse arrow" /></span>
+            <span className="block ml-32 sm:ml-60 animate-floater"><Image src={mouse} priority alt="mouse arrow" /></span>
           </div>
           <span className="w-[666px] absolute left-[45rem]"><Image src={HeroGraphic} priority alt="sliding cards" /></span>
         </div>
@@ -39,11 +39,11 @@ const Home: NextPage = () => {
       <article className="max-w-[1397px] h-[500px] m-auto bg-pattern bg-fixed rounded-[4.2rem] pt-10 sm:pt-12 lg:pt-28 relative perspective flex bg-[position:-1567px_-579px] sm:bg-[position:-567px_-579px] sm:h-[893px] items-center flex-col mt-[-20rem] sm:mt-[-40rem]">
         <h2 className="font-black text-5xl mb-12 sm:text-ultra text-white">javascript</h2>
         <p className="text-white font-light sm:text-lg max-w-xs sm:max-w-xl text-center">Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, such as Algolia and Next.js.</p>
-        <span className="top-[15rem] sm:top-[28rem] absolute mx-3"><Image src={RetroComputer} width={810} height={808} alt="blip bop" /></span>
-        <span className="invisible sm:visible absolute right-3 sm:right-24 bottom-16 sm:bottom-36"><Image src={SquigglyArrow} alt="squiggly arrow" /></span>
+        <span className="top-[15rem] sm:top-[28rem] absolute mx-3 animate-wiggle"><Image src={RetroComputer} width={810} height={808} alt="blip bop" /></span>
+        <span className="invisible sm:visible absolute right-3 sm:right-24 bottom-16 sm:bottom-36 animate-float"><Image src={SquigglyArrow} alt="squiggly arrow" /></span>
       </article>
 
-      <span className="block text-center -mt-3 xl:-mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
+      <span className="block text-center -mt-3 xl:-mt-48 animate-floater"><Image src={logos} priority alt="bunch of logos" /></span>
 
       <article className="text-center m-auto mb-32 md:mb-96 relative">
         <h2 className="font-black mb-12 text-5xl sm:text-ultra text-white text-center">api</h2>
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
 
       <article className="flex relative flex-col pb-24 sm:pb-56 sm:mx-9 xl:m-auto xl:-mt-[4rem] -mt-4 sm:-mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
         <h2 className="mx-5 text-5xl sm:text-semi-ultra mt-8 sm:mt-32 font-black text-light-green text-center">top audit scores</h2>
-        <Image src={metrics} priority style={{ zIndex: '10' }} alt="metrics" />
+        <Image src={metrics} priority className='animate-pulse' style={{ zIndex: '10' }} alt="metrics" />
 
         <p className="mx-5 mt-6 sm:m-x-0 sm:mt-0 sm:text-2xl z-10 max-w-[700px] text-mid-gray mb-9">Search engines, business stakeholders, and end-users gauge a website’s value using metric tools like Google Lighthouse, which measures site performance, SEO, and accessibility.</p>
         <p className="mx-5 sm:m-x-0 sm:mt-0 sm:text-2xl z-10 max-w-[700px] text-mid-gray mb-9">Performance is one of the most difficult scores to get to 100. This is especially true in a time when users demand JavaScript-heavy, highly-interactive web experiences.</p>
