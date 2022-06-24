@@ -1,0 +1,16 @@
+<svg
+   class="gauge"
+   xmlns="http://www.w3.org/2000/svg"
+   width="120"
+   height="120">
+  <circle
+    class="gauge"
+    stroke="#EFFFE2"
+    stroke-width="3"
+    stroke-dasharray="360"        
+    fill="transparent"
+    r="59"
+    cx="60"
+    cy="60"/>
+</svg>
+

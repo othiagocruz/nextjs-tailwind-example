@@ -11,6 +11,7 @@ module.exports = {
       fontSize: {
         'ultra': ['133px', '152px'],
         'semi-ultra': ['76px', '92px'],
+        'light-ultra': ['63px', '76px'],
         'lg': ['18px', '35px'],
         '2xl': ['24px', '38.8px'],
         '3xl': ['26px', '42px']
