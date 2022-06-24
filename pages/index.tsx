@@ -1,19 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import logos from '../public/falling-logos.svg'
 import mouse from '../public/mouse-line.png'
 import metrics from '../public/metrics.svg'
-
 import RetroComputer from "../public/retro-computer.png"
 import SquigglyArrow from "../public/squiggly-arrow.png"
 import HeroGraphic from '../public/hero-graphic.png'
 import BlockGraphic from '../public/block-graphic.jpg'
-import dynamic from 'next/dynamic'
 
-/**
- * server dont need no webgl
- */
 const Stage = dynamic(() => import('../components/Stage'), {
   loading: () => <span>Loading...</span>,
   ssr: false
@@ -47,15 +43,14 @@ const Home: NextPage = () => {
         <span className="invisible sm:visible absolute right-3 sm:right-24 bottom-16 sm:bottom-36"><Image src={SquigglyArrow} alt="squiggly arrow" /></span>
       </article>
 
-      <span className="block text-center -mt-3 sm:-mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
+      <span className="block text-center -mt-3 xl:-mt-48"><Image src={logos} priority alt="bunch of logos" /></span>
 
       <article className="text-center m-auto mb-32 md:mb-96 relative">
         <h2 className="font-black mb-12 text-5xl sm:text-ultra text-white text-center">api</h2>
         <p className="mb-5 sm:text-2xl max-w-[730px] m-auto text-white">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
         <Stage />
       </article>
-      <article className="pt-56 sm:pt-[55rem] sm:pb-[22rem] pl-4 sm:pl-28 bg-[length:29%,_contain,_auto,_101%] sm:bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
-
+      <article className="pt-56 sm:pt-[25rem] xl:pt-[55rem] sm:pb-[22rem] pl-4 sm:pl-28 bg-[length:29%,_contain,_auto,_101%] sm:bg-[length:auto,_contain,_auto,_101%] bg-[url('../public/toppled-blocks.svg'),_url('../public/wall-of-blocks.svg'),_url('../public/grid-lines.svg'),_url('../public/squiggly-dark.svg')] bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px] bg-no-repeat bg-white">
         <div className="flex relative m-auto max-w-[1397px] h-[450px] sm:h-[873px] overflow-hidden">
           <div className="flew-grow">
             <h2 className="font-black text-5xl sm:text-ultra mb-6 sm:mb-16">
@@ -68,8 +63,8 @@ const Home: NextPage = () => {
 
       </article>
 
-      <article className="flex relative flex-col pb-24 sm:pb-56 sm:mx-9 xl:m-auto -mt-4 sm:-mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
-        <h2 className="text-5xl sm:text-semi-ultra mt-8 sm:mt-32 font-black text-light-green text-center">top audit scores</h2>
+      <article className="flex relative flex-col pb-24 sm:pb-56 sm:mx-9 xl:m-auto xl:-mt-[4rem] -mt-4 sm:-mt-[4rem] items-center rounded-[3rem] max-w-[1204px] bg-scores-gradient-2">
+        <h2 className="mx-5 text-5xl sm:text-semi-ultra mt-8 sm:mt-32 font-black text-light-green text-center">top audit scores</h2>
         <Image src={metrics} priority style={{ zIndex: '10' }} alt="metrics" />
 
         <p className="mx-5 mt-6 sm:m-x-0 sm:mt-0 sm:text-2xl z-10 max-w-[700px] text-mid-gray mb-9">Search engines, business stakeholders, and end-users gauge a website’s value using metric tools like Google Lighthouse, which measures site performance, SEO, and accessibility.</p>
