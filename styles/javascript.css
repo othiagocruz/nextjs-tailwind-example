@@ -26,7 +26,3 @@
   @apply absolute w-full max-w-[150px] max-h-[250px] md:max-w-[246px] md:min-h-[446px]
          right-5 bottom-32 sm:right-24 sm:bottom-36;
 }
-
-#logos {
-  @apply absolute w-full text-center -mt-3 xl:-mt-48 top-[100rem] sm:top-[190rem];
-}

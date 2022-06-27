@@ -32,12 +32,14 @@ header {
 
 #hero {
   transform: translateZ(-10px) scale(2);
-  height: 100vh;
+  height: calc(100vh + 5rem);
 }
 
 #logos {
-  transform: translateZ(-10px) scale(2);
+  @apply absolute w-full text-center -mt-3 xl:-mt-48 top-[105rem] sm:top-[190rem];
+  transform: translateZ(-15px) scale(2.5);
 }
+
 
 /* 
   Components
