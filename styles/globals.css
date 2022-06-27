@@ -21,19 +21,22 @@ main {
 }
 
 header {
-  @apply h-[2300px] sm:h-[4300px];
+  @apply h-[2250px] sm:h-[4300px];
   transform-style: preserve-3d;
 }
 
 #wrapper {
-  @apply absolute w-full h-[908px] top-[1100px] z-10
-         sm:top-[1700px];
+  @apply absolute w-full h-[908px] top-[1100px] z-10 sm:top-[1700px];
   transform: translateZ(-5px) scale(1.5);
 }
 
 #hero {
   transform: translateZ(-10px) scale(2);
   height: 100vh;
+}
+
+#logos {
+  transform: translateZ(-10px) scale(2);
 }
 
 /* 

@@ -5,6 +5,8 @@ import Javascript from '../components/Javascript'
 import Api from '../components/Api'
 import Markup from '../components/Markup'
 import Scores from '../components/Scores'
+import Image from 'next/image'
+import logos from '../public/falling-logos.svg'
 
 
 const Home: NextPage = () => {
@@ -19,6 +21,7 @@ const Home: NextPage = () => {
       <header>
         <Hero />
         <Javascript />
+        <div id="logos"><Image src={logos} alt="posting" /></div>
       </header>
       <Api />
       <Markup />

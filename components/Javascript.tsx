@@ -1,7 +1,6 @@
 import RetroComputer from "../public/retro-computer.png"
 import SquigglyArrow from "../public/squiggly-arrow.png"
 import Image from 'next/image'
-import logos from '../public/falling-logos.svg'
 
 export default function Javascript() {
   return (
@@ -17,7 +16,6 @@ export default function Javascript() {
           <Image src={SquigglyArrow} layout="responsive" alt="squiggly arrow" />
         </span>
       </article>
-      <span id="logos"><Image src={logos} alt="posting" /></span>
     </div>
   )
 }

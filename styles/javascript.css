@@ -28,5 +28,5 @@
 }
 
 #logos {
-  @apply block text-center -mt-3 xl:-mt-48;
+  @apply absolute w-full text-center -mt-3 xl:-mt-48 top-[100rem] sm:top-[190rem];
 }
