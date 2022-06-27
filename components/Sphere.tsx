@@ -1,4 +1,4 @@
-import { GradientTexture, Sphere as NativeSphere, Sparkles } from '@react-three/drei'
+import { GradientTexture, Sparkles } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 
 /**
@@ -10,16 +10,14 @@ import { useThree } from '@react-three/fiber'
  */
 
 
-export default function Box(props: typeof NativeSphere.arguments) {
+export default function Sphere() {
   const { size } = useThree();
   return (
-    <NativeSphere
-      args={[1, 64, 64]}
-      {...props}
-      ref={props.mesh}
-      scale={[25, 25, 25]}
+    <mesh
+      scale={25}
       rotation={[0, 0, 2]}
     >
+      <sphereGeometry args={[1, 64, 64]} />
       <meshBasicMaterial>
         <GradientTexture
           stops={[0, 0.8, 1]}
@@ -29,7 +27,7 @@ export default function Box(props: typeof NativeSphere.arguments) {
       {size.width > 600 &&
         <Sparkles color="white" position={[0, 0, 0]} size={3000} count={2} opacity={1} />
       }
-    </NativeSphere>
+    </mesh>
 
 
   )
