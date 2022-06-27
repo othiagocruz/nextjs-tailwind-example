@@ -1,5 +1,5 @@
 #hero {
-  @apply w-[101%] pt-6 pl-4 absolute
+  @apply w-[101%] pt-8 pl-4 absolute
          sm:pb-[80rem] sm:pl-28 sm:pt-32 lg:pt-48
          bg-grid-lines bg-no-repeat bg-center bg-white;
 }
