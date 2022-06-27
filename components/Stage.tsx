@@ -24,7 +24,7 @@ export default function Stage() {
           floatingRange={[0, 2.5]}
           speed={5}
         >
-          <Sphere position={[0, 0, 0]} />
+          <Sphere />
           <Html
             transform
             distanceFactor={10}
