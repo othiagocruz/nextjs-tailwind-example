@@ -21,7 +21,7 @@ export default function Markup() {
           </h2>
           <p className="sm:text-2xl text-neutral-700 max-w-[480px]">When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.</p>
         </div>
-        <span className="w-[666px] absolute left-[45rem]"><Image src={BlockGraphic} priority alt="sliding cards" /></span>
+        <span className="w-[666px] absolute left-[45rem]"><Image src={BlockGraphic} alt="sliding cards" /></span>
       </div>
     </article>
   )

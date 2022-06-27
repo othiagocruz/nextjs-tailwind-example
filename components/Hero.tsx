@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="font-light mb-6 ml-4 mr-4 sm:mb-16 sm:ml-14 sm:text-lg text-stone-500 max-w-[549px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
           <span className="block ml-32 sm:ml-60 animate-floater"><Image src={mouse} priority alt="mouse arrow" /></span>
         </div>
-        <span className="w-[666px] absolute left-[45rem]"><Image src={HeroGraphic} priority alt="sliding cards" /></span>
+        <span className="w-[666px] absolute left-[45rem]"><Image src={HeroGraphic} alt="sliding cards" /></span>
       </div>
     </section>
   )

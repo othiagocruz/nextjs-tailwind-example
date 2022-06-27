@@ -17,7 +17,7 @@ export default function Javascript() {
         <span className="top-[15rem] sm:top-[28rem] absolute mx-3 animate-wiggle"><Image src={RetroComputer} width={810} height={808} alt="blip bop" /></span>
         <span className="invisible sm:visible absolute right-3 sm:right-24 bottom-16 sm:bottom-36 animate-float"><Image src={SquigglyArrow} alt="squiggly arrow" /></span>
       </article>
-      <span className="block text-center -mt-3 xl:-mt-48 animate-floater"><Image src={logos} priority alt="posting" /></span>
+      <span className="block text-center -mt-3 xl:-mt-48 animate-floater"><Image src={logos} alt="posting" /></span>
     </>
   )
 }
