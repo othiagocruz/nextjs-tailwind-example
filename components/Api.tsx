@@ -6,7 +6,9 @@ import { useState, useEffect, Suspense, lazy } from 'react'
  * fix would be to put the entire component on fiber
  */
 
-const Stage = lazy(() => import('../components/Stage'));
+const Stage = dynamic(() => import('../components/Stage'), {
+  suspense: true
+})
 
 export default function Api() {
   const [isMounted, setIsMounted] = useState(false);
