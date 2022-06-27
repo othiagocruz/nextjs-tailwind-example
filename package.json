@@ -14,8 +14,8 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@react-three/drei": "9.11.2",
-    "@react-three/fiber": "8.0.19",
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
