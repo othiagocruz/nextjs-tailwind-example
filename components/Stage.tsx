@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 export default function Stage() {
   return (
-    <section className="h-[340px] md:h-[840px] lg:h-[840px] xl:h-[1300px] left-0 w-full m-auto absolute">
+    <section id="stage">
       <Canvas camera={{ position: [0, 0, 49] }} style={{ margin: "0 auto", height: "100%" }}>
         <Float
           position={[0, 1.1, 0]}
@@ -24,8 +24,21 @@ export default function Stage() {
           speed={5}
         >
           <Sphere position={[0, 0, 0]} />
-          <Html transform distanceFactor={10} rotation={[0, 0.1, 0.25]} position={[-2, 11, 10]}><Image src={Prismic} layout="fixed" width={800} height={300} alt="Prismic" /></Html>
-          <Html transform distanceFactor={10} rotation={[-0.2, 0, -0.25]} position={[3, -8, 10]}><Image src={Supabase} layout="fixed" width={800} height={200} alt="Supabase" /></Html>
+          <Html
+            transform
+            distanceFactor={10}
+            rotation={[0, 0.1, 0.25]}
+            position={[-2, 11, 10]}>
+            <Image src={Prismic} layout="fixed" width={800} height={300} alt="Prismic" />
+          </Html>
+          <Html
+            transform
+            distanceFactor={10}
+            rotation={[-0.2, 0, -0.25]}
+            position={[3, -8, 10]}>
+            <Image
+              src={Supabase} layout="fixed" width={800} height={200} alt="Supabase" />
+          </Html>
         </Float>
         <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>

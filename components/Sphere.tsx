@@ -26,7 +26,9 @@ export default function Box(props: typeof NativeSphere.arguments) {
           colors={['#01a6dc', '#8801e4', '#f5cbe1']}
         />
       </meshBasicMaterial>
-      {size.width > 600 && <Sparkles color="white" position={[0, 0, 0]} size={3000} count={2} opacity={1} />}
+      {size.width > 600 &&
+        <Sparkles color="white" position={[0, 0, 0]} size={3000} count={2} opacity={1} />
+      }
     </NativeSphere>
 
 

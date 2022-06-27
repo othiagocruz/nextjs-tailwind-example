@@ -1,0 +1,33 @@
+.perspective {
+  transform: perspective(400px) rotateX(-2deg) scale(0.9, 0.9);
+}
+
+#javascript {
+  @apply max-w-[1397px] h-[500px] sm:h-[893px];
+  @apply flex flex-col relative;  
+  @apply m-auto items-center perspective rounded-[4.2rem];
+  @apply pt-10 mt-[-20rem] sm:pt-12 sm:mt-[-40rem] lg:pt-28;
+  @apply bg-pattern bg-[position:-1567px_-579px] sm:bg-[position:-567px_-579px];
+}
+
+#javascript h2 {
+  @apply mb-12;
+  @apply text-white font-black text-5xl sm:text-ultra;
+}
+
+#javascript p {
+  @apply text-white font-light max-w-xs text-center sm:text-lg sm:max-w-xl;
+}
+
+#retro-computer {
+  @apply absolute mx-3 animate-wiggle top-[15rem] sm:top-[28rem] ;
+}
+
+#squiggly-arrow {
+  @apply invisible sm:visible animate-float;
+  @apply absolute right-3 bottom-16 sm:right-24 sm:bottom-36;
+}
+
+#logos {
+  @apply block text-center -mt-3 animate-floater xl:-mt-48;
+}

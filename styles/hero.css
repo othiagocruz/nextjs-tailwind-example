@@ -1,0 +1,32 @@
+#hero {
+  @apply pb-[20rem] pt-6 pl-4;
+  @apply sm:pb-[40rem] sm:pl-28 sm:pt-32;
+  @apply bg-grid-lines bg-no-repeat bg-center bg-white 
+}
+
+#hero div {
+  @apply relative m-auto max-w-[1397px] overflow-hidden
+}
+
+#hero h1 {
+  @apply font-black text-5xl md:text-8xl lg:text-ultra;
+  @apply mb-4;
+}
+
+#hero h1 > span {
+  @apply text-transparent;
+  @apply bg-cover bg-no-repeat bg-clip-text bg-gradient-to-r from-[#ffbe86] to-[#cb799f]
+}
+
+#hero p {
+  @apply max-w-[549px] mb-6 ml-4 mr-4 sm:mb-16 sm:ml-14;
+  @apply font-light sm:text-lg text-stone-500;
+}
+
+#mouse-arrow {
+  @apply block animate-floater ml-32 sm:ml-60;
+}
+
+#sliding-cards {
+  @apply w-[666px] absolute left-[45rem];
+}
