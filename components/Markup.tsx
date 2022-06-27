@@ -2,13 +2,6 @@
 import BlockGraphic from '../public/block-graphic.jpg'
 import Image from 'next/image'
 
-
-/**
- * didnt know if the grid lines were supposed to be displayed
- * or if the designer forgot it on but implemented anyway
- * in here with some multiple background trickery
- */
-
 export default function Markup() {
   return (
     <article id="markup">

@@ -2,11 +2,6 @@ import HeroGraphic from '../public/hero-graphic.png'
 import mouse from '../public/mouse-line.png'
 import Image from 'next/image'
 
-/**
- * hero graphic wont show bellow md breakpoint, didnt found
- * any pleasant combination for mobile display.
- */
-
 export default function Hero() {
   return (
     <section id="hero" className="relative">
@@ -21,7 +16,7 @@ export default function Hero() {
           tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel
           pretium tempor ut dui vivamus sit.</p>
         <span id="sliding-cards">
-          <Image width={764} height={964} src={HeroGraphic} alt="sliding cards" />
+          <Image layout="responsive" src={HeroGraphic} alt="sliding cards" />
         </span>
       </div>
 

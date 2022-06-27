@@ -1,7 +1,7 @@
 #hero {
-  @apply pb-[40rem] pt-6 pl-4;
-  @apply sm:pb-[80rem] sm:pl-28 sm:pt-32;
-  @apply bg-grid-lines bg-no-repeat bg-center bg-white;
+  @apply w-[101%] pt-6 pl-4 absolute
+         sm:pb-[80rem] sm:pl-28 sm:pt-32 lg:pt-48
+         bg-grid-lines bg-no-repeat bg-center bg-white;
 }
 
 #hero div {
@@ -9,26 +9,27 @@
 }
 
 #hero h1 {
-  @apply font-black text-5xl md:text-8xl lg:text-ultra;
-  @apply mb-4 relative z-10;
+  @apply font-black text-5xl md:text-8xl lg:text-ultra
+         mb-4 relative z-10;
 }
 
 #hero h1 > span {
-  @apply text-transparent;
-  @apply bg-cover bg-no-repeat bg-clip-text bg-gradient-to-r from-[#ffbe86] to-[#cb799f]
+  @apply bg-cover bg-no-repeat bg-clip-text 
+         bg-gradient-to-r from-[#ffbe86] to-[#cb799f]
+         text-transparent;
 }
 
 #hero p {
-  @apply max-w-[549px] mb-6 ml-4 mr-4 sm:mb-16 sm:ml-14;
-  @apply font-light sm:text-lg text-stone-500 relative z-10;
+  @apply max-w-[549px] mb-6 ml-4 mr-4 sm:mb-16 sm:ml-14 
+         font-light sm:text-lg text-stone-500 relative z-10;
 }
 
 #mouse-arrow {
-  @apply absolute w-[45px] h-[275px] md:w-[81px] md:h-[530px];
-  @apply left-1/3 top-52 md:top-[27rem] lg:top-[30rem] z-10;
+  @apply absolute w-[65px] h-[300px] md:w-[72px] md:h-[515px]
+         left-1/3 top-60 sm:top-[24rem] lg:top-[30rem] z-10;
 }
 
 #sliding-cards {
-  @apply max-w-[764px] min-h-[964px] top-0 absolute z-0;
-  @apply top-48 md:-right-20 md:top-56 lg:top-0 lg:-right-96 xl:-right-64 2xl:right-0;
+  @apply absolute z-0 w-full max-w-[764px] min-h-[964px]
+         top-48 md:-right-20 md:top-56 lg:top-0 lg:-right-96 xl:-right-64 2xl:right-0;
 }

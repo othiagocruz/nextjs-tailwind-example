@@ -8,12 +8,37 @@ body {
   @apply text-dark-gray;
 }
 
-/* main {
+
+/* 
+  Parallax
+*/
+
+main {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 20px;
-} */
+  perspective: 10px;
+}
+
+header {
+  @apply h-[2300px] sm:h-[4300px];
+  transform-style: preserve-3d;
+}
+
+#wrapper {
+  @apply absolute w-full h-[908px] top-[1100px] z-10
+         sm:top-[1700px];
+  transform: translateZ(-5px) scale(1.5);
+}
+
+#hero {
+  transform: translateZ(-10px) scale(2);
+  height: 100vh;
+}
+
+/* 
+  Components
+*/
 
 @import "./hero.css";
 @import "./javascript.css";

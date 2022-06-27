@@ -1,12 +1,10 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
-
 /**
  * stage sparkle will clip in certain conditions,
  * fix would be to put the entire component on fiber
  */
-
 
 const Stage = dynamic(() => import('../components/Stage'), {
   suspense: true

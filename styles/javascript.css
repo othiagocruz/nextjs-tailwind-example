@@ -1,18 +1,17 @@
 .perspective {
-  transform: perspective(200px) rotateX(-2deg) scale(0.9);
+  transform: perspective(400px) rotateX(-2deg) scale(0.9);
 }
 
 #javascript {
-  @apply max-w-[1397px] h-[500px] sm:h-[893px];
-  @apply flex flex-col relative;  
-  @apply m-auto items-center perspective rounded-[4.2rem];
-  @apply pt-10 mt-[-20rem] sm:pt-12 sm:mt-[-40rem] lg:pt-28;
-  @apply bg-pattern bg-[position:-1567px_-579px] sm:bg-[position:-567px_-579px];
+  @apply max-w-[1397px] h-[500px] sm:h-[893px]
+         flex flex-col relative 
+         m-auto items-center perspective rounded-[4.2rem]
+         pt-10 sm:pt-12 lg:pt-28
+         bg-pattern bg-[position:-1067px_-579px] sm:bg-[position:-567px_-579px];
 }
 
 #javascript h2 {
-  @apply mb-12;
-  @apply text-white font-black text-5xl sm:text-ultra;
+  @apply mb-12 text-white font-black text-5xl sm:text-ultra;
 }
 
 #javascript p {
@@ -24,8 +23,8 @@
 }
 
 #squiggly-arrow {
-  @apply invisible sm:visible;
-  @apply absolute right-3 bottom-16 sm:right-24 sm:bottom-36;
+  @apply absolute w-full max-w-[150px] max-h-[250px] md:max-w-[246px] md:min-h-[446px]
+         right-5 bottom-32 sm:right-24 sm:bottom-36;
 }
 
 #logos {

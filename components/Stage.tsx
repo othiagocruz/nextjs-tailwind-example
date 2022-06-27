@@ -7,7 +7,8 @@ import Image from 'next/image'
 
 /**
  * simple stage component for housing the canvas for the webgl marble, 
- * can also load it with ssr: false for better performance. 
+ * can also load it with ssr: false for better performance. [edit]: switched to 
+ * react suspense.
  * 
  * logos positioning was adapted from original idea, tried to make the html elements
  * follow the sphere geometry like in figma but i need some more time to do this. sSettled to

@@ -11,6 +11,6 @@
 }
 
 #stage {
-  @apply h-[340px] md:h-[840px] lg:h-[840px] xl:h-[1300px];
-  @apply left-0 w-full m-auto absolute;
+  @apply h-[340px] md:h-[840px] lg:h-[840px] xl:h-[1300px]
+         left-0 w-full m-auto absolute;
 }

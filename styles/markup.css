@@ -4,10 +4,10 @@
                     url('../public/grid-lines.svg'), 
                     url('../public/squiggly-dark.svg');
   
-  @apply pt-56 sm:pt-[25rem] xl:pt-[55rem] sm:pb-[22rem] pl-4 sm:pl-28;
-  @apply bg-[length:29%,_contain,_auto,_101%] sm:bg-[length:auto,_contain,_auto,_101%];
-  @apply bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px];
-  @apply bg-no-repeat bg-white;
+  @apply pt-56 sm:pt-[25rem] xl:pt-[55rem] sm:pb-[22rem] pl-4 sm:pl-28
+         bg-[length:29%,_contain,_auto,_101%] sm:bg-[length:auto,_contain,_auto,_101%]
+         bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px]
+         bg-no-repeat bg-white;
 }
 
 #markup > div {

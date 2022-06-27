@@ -1,10 +1,4 @@
 
-/**
- * this one was really tricky, figma exports werent so good (big sizes or broken)
- * and the fix I did on the exported svg actually broke on safari so i had 
- * to implement it with CSS
- */
-
 export default function Scores() {
   return (
     <article id="scores">

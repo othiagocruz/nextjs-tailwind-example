@@ -13,14 +13,14 @@
 }
 
 #scores {
-  @apply flex relative flex-col items-center;
-  @apply rounded-[3rem] max-w-[1204px] bg-scores-gradient-2;
-  @apply pb-24 -mt-4 sm:pb-56 sm:-mt-[4rem] sm:mx-9 xl:m-auto xl:-mt-[4rem];
+  @apply flex relative flex-col items-center
+         rounded-[3rem] max-w-[1204px] bg-scores-gradient-2
+         pb-24 -mt-4 sm:pb-56 sm:-mt-[4rem] sm:mx-9 xl:m-auto xl:-mt-[4rem];
 }
 
 #scores > h2 {
-  @apply mx-5 mt-8 text-5xl font-black text-light-green text-center;
-  @apply sm:text-semi-ultra sm:mt-32;
+  @apply mx-5 mt-8 text-5xl font-black text-light-green text-center
+         sm:text-semi-ultra sm:mt-32;
 }
 
 #gauges {
@@ -28,19 +28,19 @@
 }
 
 #gauges > span {
-  @apply flex w-20 h-20 md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-52 xl:h-52 rounded-full;
-  @apply bg-[url('../public/gauge.svg')] bg-cover;
-  @apply rotate-[10deg] glow items-center justify-center animate-pulse;
+  @apply flex w-20 h-20 md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-52 xl:h-52 rounded-full
+         bg-[url('../public/gauge.svg')] bg-cover
+         rotate-[10deg] glow items-center justify-center animate-pulse;
 }
 
 #gauges > span > span {
-  @apply text-3xl md:text-5xl lg:text-light-ultra;
-  @apply text-light-green glow-text font-bold glow-text rotate-[-10deg];
+  @apply text-3xl md:text-5xl lg:text-light-ultra
+         text-light-green glow-text font-bold glow-text rotate-[-10deg];
 }
 
 #scores > p {
-  @apply mx-5 mb-9 z-10 max-w-[700px] text-mid-gray;
-  @apply sm:mx-0 sm:mt-0 sm:text-2xl;
+  @apply mx-5 mb-9 z-10 max-w-[700px] text-mid-gray
+         sm:mx-0 sm:mt-0 sm:text-2xl;
 }
 
 #overlay {
