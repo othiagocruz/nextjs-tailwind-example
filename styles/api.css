@@ -7,7 +7,7 @@
 }
 
 #api p {
-  @apply mb-5 max-w-[730px] m-auto text-white sm:text-2xl;
+  @apply mb-5 max-w-[730px] mx-4 md:m-auto text-white sm:text-2xl;
 }
 
 #stage {

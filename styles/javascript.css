@@ -1,5 +1,5 @@
 .perspective {
-  transform: perspective(400px) rotateX(-2deg) scale(0.9, 0.9);
+  transform: perspective(200px) rotateX(-2deg) scale(0.9);
 }
 
 #javascript {
@@ -20,14 +20,14 @@
 }
 
 #retro-computer {
-  @apply absolute mx-3 animate-wiggle top-[15rem] sm:top-[28rem] ;
+  @apply absolute mx-3 top-[15rem] sm:top-[28rem] ;
 }
 
 #squiggly-arrow {
-  @apply invisible sm:visible animate-float;
+  @apply invisible sm:visible;
   @apply absolute right-3 bottom-16 sm:right-24 sm:bottom-36;
 }
 
 #logos {
-  @apply block text-center -mt-3 animate-floater xl:-mt-48;
+  @apply block text-center -mt-3 xl:-mt-48;
 }

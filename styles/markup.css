@@ -1,19 +1,17 @@
-/* moved complex css rules out of tailwind  */
 #markup {
   background-image: url('../public/toppled-blocks.svg'), 
                     url('../public/wall-of-blocks.svg'), 
                     url('../public/grid-lines.svg'), 
                     url('../public/squiggly-dark.svg');
-  background-size: auto, contain, auto, 101%;
-  background-position: 8% 85%, bottom center, bottom center, -2px -2px;
   
-  @apply pt-56 pl-4 sm:pt-[25rem] sm:pl-28 sm:pb-[22rem] xl:pt-[55rem];
+  @apply pt-56 sm:pt-[25rem] xl:pt-[55rem] sm:pb-[22rem] pl-4 sm:pl-28;
+  @apply bg-[length:29%,_contain,_auto,_101%] sm:bg-[length:auto,_contain,_auto,_101%];
+  @apply bg-[position:8%_85%,_bottom_center,_bottom_center,_-2px_-2px];
   @apply bg-no-repeat bg-white;
 }
 
 #markup > div {
-  @apply max-w-[1397px] h-[450px] sm:h-[873px];
-  @apply relative m-auto overflow-hidden;
+  @apply relative m-auto max-w-[1397px] h-[450px] sm:h-[873px] overflow-hidden;
 }
 
 #markup h2 {
@@ -21,7 +19,7 @@
 }
 
 #markup p {
-  @apply text-neutral-700 max-w-[480px] sm:text-2xl;
+  @apply sm:text-2xl text-neutral-700 max-w-[480px];
 }
 
 #markup-cards {
