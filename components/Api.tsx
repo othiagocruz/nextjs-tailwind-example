@@ -11,22 +11,16 @@ const Stage = dynamic(() => import('../components/Stage'), {
 })
 
 export default function Api() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+
   return (
     <article id="api">
       <h2>api</h2>
       <p>At build time, a Jamstack website uses data from one or more APIs to generate markup.
         These APIs can be a headless CMS like Prismic, a database like Supabase, or even a
         local JSON file!</p>
-      {!isMounted ? null : (
-        <Suspense fallback={null}>
-          <Stage />
-        </Suspense>
-      )}
-
+      <Suspense fallback={null}>
+        <Stage />
+      </Suspense>
     </article>
   )
 }

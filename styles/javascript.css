@@ -19,7 +19,7 @@
 }
 
 #retro-computer {
-  @apply absolute mx-3 top-[15rem] sm:top-[28rem] ;
+  @apply absolute mx-12 max-w-[812px] top-[15rem] sm:top-[28rem] w-full;
 }
 
 #squiggly-arrow {

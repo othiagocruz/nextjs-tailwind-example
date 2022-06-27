@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <header>
         <Hero />
         <Javascript />
-        <div id="logos"><Image src={logos} alt="posting" /></div>
+        <div id="logos"><Image layout="responsive" src={logos} alt="posting" /></div>
       </header>
       <Api />
       <Markup />

@@ -10,7 +10,7 @@ export default function Javascript() {
         <p>Statically generated pages are brought to life with client-side JavaScript
           libraries and frameworks, such as Algolia and Next.js.</p>
         <span id="retro-computer">
-          <Image src={RetroComputer} width={810} height={808} alt="blip bop" />
+          <Image src={RetroComputer} layout="responsive" width={810} height={808} alt="blip bop" />
         </span>
         <span id="squiggly-arrow">
           <Image src={SquigglyArrow} layout="responsive" alt="squiggly arrow" />

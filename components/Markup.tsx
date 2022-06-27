@@ -15,7 +15,7 @@ export default function Markup() {
             HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge
             Network.</p>
         </div>
-        <span id="markup-cards"><Image src={BlockGraphic} alt="sliding cards" /></span>
+        <span id="markup-cards"><Image layout="responsive" src={BlockGraphic} alt="sliding cards" /></span>
       </div>
     </article>
   )
